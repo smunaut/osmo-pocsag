@@ -92,9 +92,7 @@ bch_fix(uint32_t data)
 	}
 
 	for (i=0; i<32; i++) {
-		for (j=0; j<32; j++) {
-			if (i == j)
-				continue;
+		for (j=i+1; j<32; j++) {
 			t = data ^ ((1<<i) | (1<<j));
 			if (!bch_syndrome(t))
 				return t;
