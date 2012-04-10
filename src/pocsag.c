@@ -150,7 +150,7 @@ pocsag_txt_feed(struct pocsag_txt *pt, uint32_t d)
 #define POCSAG_SYNC     0x7cd215d8
 #define POCSAG_IDLE     0x7a89c197
 
-#define SYNC_MAX	10
+#define SYNC_MAX	4
 #define SYNC_DEC	1
 #define SYNC_INC	2
 
